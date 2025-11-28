@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>username form</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+            margin: 10px;
+            color: rgb(40, 40, 102);;
+        }
+        #form-validate{
+            width: 30vw;
+            height: 70vh;
+            border: 1px solid black;
+            margin: auto;
+            min-width: 300px;
+            display: grid;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        body{
+            margin: 100px;
+        } 
+        #form-validate>.from-group{
+            display: flex;
+            flex-direction: column;
+
+        }
+        #form-validate>.from-group input{
+            outline: none;
+            font-size: 18px;
+            padding: 6px;
+            border-bottom: 5px;
+            border: none;
+            border-bottom: 1px solid gray;
+            margin-top: 5px;
+        }
+        #form-validate>button{
+            border: none;
+            height: 35px;
+            background-color: blue;
+            outline: none;
+            color: antiquewhite;
+        }
+        #form-validate>button:hover{
+            background-color: rgb(40, 40, 102);
+        }
+        #form-validate>.from-group{
+            font-size: 20px;
+            color: rgb(40, 40, 102);;
+        }
+        #form-validate>.from-group span{
+            color:red;
+            font-size: 15px;
+            margin: 5px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>create new account</h1>
+    <form id="form-validate">
+    <div class="from-group">
+        <label for="">username</label>
+        <input type="text" id="userName">
+        <span id="username-error"></span>
+    </div>
+    <div class="from-group">
+        <label for="">email</label>
+        <input type="email" id="email">
+        <span id="email-error"></span>
+    </div>
+    <div class="from-group">
+        <label for="">password</label>
+        <input type="password" id="password">
+        <span  id="password-error"></span>
+    </div>
+    <div class="from-group">
+        <label for="">confirm password</label>
+        <input type="password" id="confirmpassword">
+        <span  id="confirmpassword-error"></span>
+    </div>
+    <button type="submit">sumit</button>
+    </form>
+<script src="index.js">
+</script>
+
+</body>
+</html>
